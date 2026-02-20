@@ -1,0 +1,82 @@
+/* Previous Analysis page. Base layout/table/modal styles live in global.css */
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: flex-end; /* Right-align the button */
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+
+/* Sorting Bar */
+.sorting-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+  background-color: var(--sidebar);
+  color: var(--text);
+    font-weight: bold;
+    padding: 10px;
+  border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it spans the full width of the parent container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.sorting-bar span {
+    text-align: center;
+}
+
+/* Table Styling */
+.analysis-table-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.analysis-table .placeholder {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Viewing window for files style */
+/* File Viewer Overlay */
+#file-viewer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  #file-viewer-overlay.hidden {
+    display: none;
+  }
+  
+  #file-viewer-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+  }
+  
+  .modal-content.large {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    text-align: left;
+  }
+  
+  #close-viewer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  

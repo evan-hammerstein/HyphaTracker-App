@@ -1,0 +1,28 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.hyphatracker.app
+productName: HyphaTracker
+files:
+  - filter:
+      - main.js
+      - preload.js
+      - renderer{,/**}
+      - html{,/**}
+      - css{,/**}
+      - linkers{,/**}
+      - package.json
+extraResources:
+  - from: python_dist/hyphatracker-analysis
+    to: analysis/hyphatracker-analysis
+mac:
+  target:
+    - dmg
+    - zip
+win:
+  target:
+    - nsis
+linux:
+  target:
+    - AppImage
+electronVersion: 33.3.1

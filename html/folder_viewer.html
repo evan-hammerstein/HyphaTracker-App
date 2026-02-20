@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folder Viewer</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/previous_analysis.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">HyphaTracker</div>
+      <nav>
+        <ul>
+          <li onclick="electron.navigateTo('home')">🏠 Home</li>
+          <li class="active" onclick="electron.navigateTo('previous_analysis')">📅 Previous Analysis</li>
+          <li onclick="electron.navigateTo('settings')">⚙️ Settings</li>
+          <li onclick="electron.navigateTo('notifications')">🔔 Notifications</li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="dashboard">
+      <header class="header">
+        <h1>Folder Viewer</h1>
+      </header>
+      <div class="analysis-table-container">
+        <table class="analysis-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="folder-contents">
+            <!-- Dynamic content will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <script src="../renderer/folder_viewer_renderer.js"></script>
+</body>
+</html>

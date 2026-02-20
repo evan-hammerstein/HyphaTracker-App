@@ -1,0 +1,18 @@
+/* Help/notifications page styles. Base layout lives in global.css */
+  
+  .notifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .help-link {
+    word-break: break-word;
+  }
+  
+  .notification-item {
+    background-color: var(--surface);
+    padding: 15px;
+    border-radius: 12px;
+  }
+  

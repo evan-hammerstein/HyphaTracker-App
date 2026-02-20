@@ -1,0 +1,14 @@
+/* Settings-specific styles. Base layout lives in global.css */
+  
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .setting-item {
+    background-color: var(--surface);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  

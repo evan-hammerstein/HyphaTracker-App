@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypha Tracker - New Analysis</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/new_analysis.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Hypha Tracker</h1>
+    </header>
+    <div class="content">
+      <!-- Upload Section -->
+      <div class="upload-section">
+        <button id="upload-button">Click to Upload .tif File</button>
+        <p id="uploaded-file-name">No file selected</p>
+      </div>
+
+      <!-- Parameters Section -->
+      <div class="parameters-section">
+        <div class="parameter-group">
+          <label for="dimension">Dimension:</label>
+          <select id = "dimension">
+            <option value = "10x">10x</option>
+            <option value = "20x">20x</option>
+            <option value = "40x">40x</option>
+            <option value = "100x">100x</option>
+          </select>
+        </div>
+        <div class="parameter-group">
+          <label for="background">Filter:</label>
+          <select id="background">
+            <option value="Gaussian">Gaussian</option>
+            <option value="Mean">Mean</option>
+          </select>
+        </div>
+        <div class="parameter-group">
+          <label for="sensitivity">Sensitivity:</label>
+          <input type="range" id="sensitivity" min="1" max="8">
+        </div>
+      </div>
+
+      <!-- Analysis Section -->
+      <div class="analysis-section">
+        <button id="go-button" class="action-button">GO</button>
+      </div>
+    </div>
+  </div>
+  <script src="../renderer/new_analysis_renderer.js"></script>
+</body>
+</html>

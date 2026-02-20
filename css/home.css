@@ -1,0 +1,65 @@
+/* Home-specific layout and cards. Base styling lives in global.css */
+  
+  /* Metrics Container */
+  .metrics-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .metric-card {
+    background-color: var(--surface);
+    padding: 22px;
+    border-radius: 12px;
+    flex: 1;
+  }
+
+  .metric-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Calendar Box */
+  .calendar-box {
+    background-color: var(--surface);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .calendar-grid div {
+    background-color: var(--sidebar);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Activities Section */
+  .activities-box {
+    background-color: var(--sidebar);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+  }
+  
+  .activity-card {
+    padding: 15px;
+    background-color: var(--surface);
+    margin-bottom: 10px;
+    border-radius: 12px;
+  }
+  
+  .add-activity {
+    background-color: var(--accent);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-on-accent);
+    font-weight: 700;
+  }
+  

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HyphaTracker - Previous Analysis</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/previous_analysis.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">HyphaTracker</div>
+      <nav>
+        <ul>
+          <li data-screen="home" onclick="electron.navigateTo('home')"><span>🏠</span> Home</li>
+          <li data-screen="previous-analysis" class="active" onclick="electron.navigateTo('previous_analysis')"><span>📅</span> Previous Analysis</li>
+          <li data-screen="settings" onclick="electron.navigateTo('settings')"><span>⚙️</span> Settings</li>
+          <li data-screen="notifications" onclick="electron.navigateTo('notifications')"><span>🔔</span> Help</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dashboard">
+      <header class="header">
+        <h1>Previous Analysis</h1>
+      </header>
+
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <button id="add-file-button" class="add-button">+ Add New</button>
+      </div>
+      
+      <!-- Analysis Table -->
+      <div class="analysis-table-container">
+        <table class="analysis-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Size</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody id="analysis-table-body">
+            <!-- Rows will be added dynamically -->
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Viewer Overlay -->
+        <div id="file-viewer-overlay" class="modal hidden">
+            <div class="modal-content large">
+            <button id="close-viewer" class="modal-close">Close</button>
+            <div id="file-viewer-content">
+                <!-- Dynamic content will be added here -->
+            </div>
+            </div>
+        </div>
+  
+  
+      
+
+      <!-- Modal -->
+      <div id="add-new-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Add New File</h2>
+          <p>Select an option to proceed:</p>
+          <button id="manual-upload" class="modal-button">Manual Upload</button>
+          <button id="new-analysis" class="modal-button">New Analysis</button>
+          <button id="close-modal" class="modal-close">Cancel</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../renderer/previous_analysis_renderer.js"></script>
+</body>
+</html>
