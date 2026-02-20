@@ -32,7 +32,7 @@ Sample Images can be found here:
 
 # Requirements
 
-## Software Dependencies
+## Software Dependencies (Check Releases for Packaged Version)
 
 The code requires the following Python3 libraries:
 
