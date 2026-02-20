@@ -1,4 +1,5 @@
-# HyphaTracker - completed in GitHub Release!
+# HyphaTracker - completed in GitHub Release! 
+# https://github.com/evan-hammerstein/HyphaTracker-App/releases/tag/Release
 
 This project is designed to analyze fungal growth using image processing techniques. It provides tools to process a sequence of tiff files representing a time-lapse of fungal growth, detect and track hyphal tips, calculate growth metrics, and visualize results. The analysis includes measurements of tip growth rates, branching frequency, spore identification, biomass quantification, and distances to regions of interest (ROIs).
 
